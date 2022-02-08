@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-def get_top_repo(s,n,m):
+def get_top_repo(s,n):
     url = f"https://github.com/topics/{s}?o=desc&s=forks"
     response= requests.get(url)
     r_code = response.status_code
